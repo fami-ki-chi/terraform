@@ -3,7 +3,7 @@ locals {
   resource-group = "tf-lb-rg"
   prefix         = "test"
   vnet-address-space = "100.0.0.0/16"
-  vnet-default-subnet = 100.0.0.0/24"
+  vnet-default-subnet = "100.0.0.0/24"
 }
 
 resource "azurerm_resource_group" "tf-rg" {
@@ -74,7 +74,7 @@ resource "azurerm_virtual_machine" "tf-vm-1" {
   }
 }
 
-VM resouce 2
+# VM resouce 2
 
 resource "azurerm_network_interface" "vm-2-nic" {
   name                 = "${local.prefix}-vm-2-nic"
