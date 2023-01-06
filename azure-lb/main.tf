@@ -20,12 +20,12 @@ variable "location" {
 
 variable "username" {
   description = "Username for Virtual Machines"
-  default     = "tozaki"
+  default     = "USERNAME"
 }
 
 variable "password" {
   description = "Password for Virtual Machines"
-  default     = "Songbird1125"
+  default     = "PASSWORD"
 }
 
 variable "vmsize" {
